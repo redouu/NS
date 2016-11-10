@@ -31,7 +31,10 @@ def request_xml(http, key):
       
 # def station items
 # def station info
-  
+def bg():
+    bgc = Label(root, height=1000, width=1000, anchor=N, background="#ffc917")
+    bgc.grid(row=0, column=0, sticky="nsew")
+    return root
 def info_init():
     root.wm_title("NS Reisinformatie")
     #  Tekstlabel weergeven
